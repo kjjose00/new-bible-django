@@ -1,0 +1,94 @@
+{% extends 'bible/index.html' %}
+{% block home %}
+   {% include 'bible/navbar.html' %} 
+        <div class="container mx-auto p-20 flex space-x-6">
+            <div class="w-1/2">
+                <p class="text-center py-2 font-bold text-xl bg-orange-500 text-white rounded">പഴയ നിയമം</p>
+                <ul class="grid grid-cols-2 text-red-700 font-bold">
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 1 1 %}">ഉല്‍‍പത്തി</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 2 1 %}">പുറപ്പാട്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 3 1 %}">ലേവ്യര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 4 1 %}">സംഖ്യ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 5 1 %}">നിയമാവര്‍ത്തനം</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 6 1 %}">ജോഷ്വാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 7 1 %}">ന്യായാധിപ‌ന്‍‍മാര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 8 1 %}">റൂത്ത്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 9 1 %}">1 സാമുവല്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 10 1 %}">2 സാമുവല്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 11 1 %}">1 രാജാക്ക‌ന്‍‍മാര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 12 1 %}">2 രാജാക്ക‌ന്‍‍മാര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 13 1 %}">1 ദിനവൃത്താന്തം</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 14 1 %}">2 ദിനവൃത്താന്തം</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 15 1 %}">എസ്രാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 16 1 %}">നെഹമിയ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 17 1 %}">തോബിത്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 18 1 %}">യൂദിത്ത്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 19 1 %}">എസ്തേര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 20 1 %}">1 മക്കബായര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 21 1 %}">2 മക്കബായര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 22 1 %}">ജോബ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 23 1 %}">സങ്കീര്‍ത്തനങ്ങള്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 24 1 %}">സുഭാഷിതങ്ങള്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 25 1 %}">സഭാപ്രസംഗക‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 26 1 %}">ഉത്തമഗീതം</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 27 1 %}">ജ്ഞാനം</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 28 1 %}">പ്രഭാഷക‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 29 1 %}">ഏശയ്യാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 30 1 %}">ജെറെമിയ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 31 1 %}">വിലാപങ്ങള്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 32 1 %}">ബാറൂക്ക്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 33 1 %}">എസെക്കിയേല്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 34 1 %}">ദാനിയേല്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 35 1 %}">ഹോസിയാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 36 1 %}">ജോയേല്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 37 1 %}">ആമോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 38 1 %}">ഒബാദിയ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 39 1 %}">യോനാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 40 1 %}">മിക്കാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 41 1 %}">നാഹും</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 42 1 %}">ഹബക്കുക്ക്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 43 1 %}">സെഫാനിയ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 44 1 %}">ഹഗ്ഗായി</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 45 1 %}">സഖറിയാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 1 46 1 %}">മലാക്കി</a></li>
+                </ul>
+
+            </div>
+            <div class="w-1/2">
+                <p class="text-center py-2 font-bold text-xl bg-yellow-500 text-white rounded">പുതിയ നിയമം</p>
+                <ul class="grid grid-cols-2 text-red-700 font-bold">
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 47 1 %}">മത്തായി</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 48 1 %}">മര്‍ക്കോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 49 1 %}">ലൂക്കാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 50 1 %}">യോഹന്നാ‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 51 1 %}">അപ്പ. പ്രവര്‍ത്തനങ്ങള്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 52 1 %}">റോമാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 53 1 %}">1 കൊറിന്തോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 54 1 %}">2 കൊറിന്തോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 55 1 %}">ഗലാത്തിയാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 56 1 %}">എഫേസോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 57 1 %}">ഫിലിപ്പി</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 58 1 %}">കൊളോസോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 59 1 %}">1 തെസലോനിക്കാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 60 1 %}">2 തെസലോനിക്കാ</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 61 1 %}">1 തിമോത്തേയോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 62 1 %}">2 തിമോത്തേയോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 63 1 %}">തീത്തോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 64 1 %}">ഫിലെമോ‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 65 1 %}">ഹെബ്രായര്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 66 1 %}">യാക്കോബ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 67 1 %}">1 പത്രോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 68 1 %}">2 പത്രോസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 69 1 %}">1 യോഹന്നാ‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 70 1 %}">2 യോഹന്നാ‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 71 1 %}">3 യോഹന്നാ‌ന്‍</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 72 1 %}">യുദാസ്</a></li>
+                    <li class="bg-slate-300 rounded py-1  pl-12 border-2 border-blue-500"><a href="{% url 'show_bible_content' 2 73 1 %}">വെളിപാട്</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        {% include 'bible/footer.html' %}
+
+{% endblock %}

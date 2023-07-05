@@ -1,0 +1,80 @@
+{% extends 'bible/index.html' %}
+
+{% block bible_contents %}
+    {% include 'bible/navbar.html' %}  
+    <div class="container p-20 mx-auto">
+        <div class="flex w-full flex-wrap gap-2 border-2 p-4 rounded border-green-500 mb-10">
+
+            {% for c in ch %}
+            <span class="border w-10 h-10 flex justify-center items-center text-red-700 font-bold border-red-400 bg-yellow-300" id="chapter{{forloop.counter}}">{{c}}</span>
+            <!-- Your HTML content -->
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(`#chapter{{forloop.counter}}`).click(function(e) {
+    // Prepare the data to send in the AJAX request
+    e.preventDefault();
+
+    // Make the AJAX request
+    $.ajax({
+      type: 'GET',
+      url: `{% url "show_content_ajax_call" testament bookno forloop.counter %}`,  // Replace "ajax_view" with the actual URL name of your Django view
+      
+      dataType: 'json',
+      success: function(response) {
+
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+            
+        // }
+        // Handle the successful response from the server
+        // console.log(typeof(response));
+        json_object=JSON.parse(response)
+        console.log(json_object)
+    //     json_object.forEach(function(item) {
+    //   console.log(item.fields.verse);
+    // });
+        document.getElementById('chapter_id').innerText=json_object[0].fields.chapter
+
+        document.getElementById('verse_id').innerText="";
+    for (let index = 0; index < json_object.length; index++) {
+        console.log(json_object[index].fields.verse);
+        document.getElementById("verse_id").innerHTML=document.getElementById('verse_id').innerHTML+"<br><br>"+json_object[index].fields.verse
+
+        
+    }
+    
+      },
+      error: function(xhr, errmsg, err) {
+        // Handle the error response
+        console.log(xhr.status + ": " + xhr.responseText);
+      }
+    });
+  });
+});
+</script>
+
+            
+            {% endfor %}
+        </div>
+
+        <p class="text-center text-2xl font-bold">{{books}} - അധ്യായം <span id="chapter_id">{{chapter}}</span></p><br><br>
+        <div id="verse_id">
+
+            
+            {% for b in bible %}
+            
+            
+            {{b.verse}}<br><br>
+            
+            
+            {% endfor %}
+        </div>
+        
+    </div>  
+
+    {% include 'bible/footer.html' %}
+{% endblock %}
